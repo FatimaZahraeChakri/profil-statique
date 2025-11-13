@@ -6,16 +6,12 @@ export default function ProfilStatique() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      {/* Photo de profil */}
       <Image
         source={{ uri: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80' }}
         style={styles.avatar}
       />
-
-      {/* Titre */}
       <Text style={styles.title}>Profil Utilisateur</Text>
 
-      {/* Champ Nom */}
       <Text style={styles.label}>Nom :</Text>
       <TextInput
         style={styles.input}
@@ -24,12 +20,9 @@ export default function ProfilStatique() {
         onChangeText={setNom}
         editable={true}
       />
-
-      {/* Message */}
       <Text style={styles.label}>Message :</Text>
       <Text style={styles.message}>Bienvenue sur mon profil </Text>
-
-      {/* Bouton avec alerte comme ton exemple */}
+    
       <Button
         title="Afficher une alerte"
         onPress={() => {
